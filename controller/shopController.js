@@ -12,7 +12,7 @@ const addShop = async(req, res) => {
             mobile_number
         } = req.body;
 
-        //Check emptyness of the incoming data
+        //Check of the incoming data
         if (!full_name || !email || !password || !user_type || !mobile_number) {
             return res.json({
                 message: 'Please enter all the Shop details'
